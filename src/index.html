@@ -10,15 +10,14 @@
     <!--Slick Slider-->
     <!--<link type="text/css" href="/css/slick.css"/>-->
     <!--<link type="text/css" href="/css/slick-theme.css"/>-->
-
-
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script
+            src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
             crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -32,50 +31,52 @@
 </head>
 <body>
 <section class="container menu">
-    <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand col-md-3 col-sm-3 col-3" href="#">
-            <img src="img/logo.png" alt="Logo" width="30" height="28"> Shape<span>Up</span>
-        </a>
-        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-        </button>
-        <div class="collapse navbar-collapse col-md-9 justify-content-end" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#trainers">Trainers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#programs">Service</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Reviews</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Price</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand col-md-3 col-sm-3 col-3" href="#">
+                <img src="img/logo.png" alt="Logo" width="30" height="28"> Shape<span>Up</span>
+            </a>
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse col-md-9 justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#trainers">Trainers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#programs">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Price</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
 
-            </ul>
+                </ul>
+            </div>
         </div>
     </nav>
 </section>
 <section class="container-fluid">
     <div class="row hero align-items-center">
-        <div class="container">
-            <div class="col-md-6">
-                <h1 class="display-4 hero__title"><span>BUild</span> Your Body<br>
+        <div class="container" id="startchange">
+            <div class="col-md-6 col-1">
+                <h1 class="display-4 hero__title" ><span>BUild</span> Your Body<br>
                     <span>Transform</span> Your Life</h1>
                 <p class="lead hero__subtitle">Curabitur ac volutpat odio. Nunc eget eros viverra, laoreet ligula eget,
                     interdum augue.
@@ -218,6 +219,58 @@
             </div>
         </div>
     </div>
+</section>
+<section class="reviews" id="reviews">
+    <div class="container">
+        <div class="col-12 text-center">
+            <h3 class="reviews__subtitle">Reviews</h3>
+            <h2 class="reviews__title">What our clients say</h2>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="reviews__slider">
+                    <div class="reviews__slide1">
+                        <img src="img/review01.png">
+                        <div class="text-block">
+                            <h3 class="name">Rebecca Morrison</h3>
+                            <p class="job">Social Worker</p>
+                            <p class="text">Curabitur interdum nulla ligula, ac iaculis est venon.
+                                Quisque auctor, ex id posuere aliquam, lorem mauris
+                                venenatis sem, eu facilisis magna nibh . Praesent
+                                laoreet leo diam, ut suscipit purus malesuada laoreet.
+                                Aliquam erat volutpat.</p>
+                            <div class="stars"></div>
+                        </div>
+                    </div>
+                    <div class="reviews__slide2 ">
+                        <img src="img/review02.png">
+                        <div class="text-block">
+                            <h3 class="name">Daniel Bllomberg</h3>
+                            <p class="job">Salesman</p>
+                            <p class="text">Curabitur interdum nulla ligula, ac iaculis est venon.
+                                Quisque auctor, ex id posuere aliquam, lorem mauris
+                                venenatis sem, eu facilisis magna nibh . Praesent
+                                laoreet leo diam, ut suscipit purus malesuada laoreet.
+                                Aliquam erat volutpat.</p>
+                            <div class="stars"></div>
+                        </div>
+                    </div>
+                    <div class="reviews__slide3">
+                        <img src="img/review02.png">
+                        <div class="text-block">
+                            <h3 class="name">Adam Adams</h3>
+                            <p class="job">Account Manager</p>
+                            <p class="text">Curabitur interdum nulla ligula, ac iaculis est venon.
+                                Quisque auctor, ex id posuere aliquam, lorem mauris
+                                venenatis sem, eu facilisis magna nibh . Praesent
+                                laoreet leo diam, ut suscipit purus malesuada laoreet.
+                                Aliquam erat volutpat.</p>
+                            <div class="stars"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </section>
 <footer>
 

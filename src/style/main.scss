@@ -13,6 +13,9 @@ body {
   background-color: $black !important;
   font-family: 'Lato', sans-serif;
 
+  .navbar {
+    transition: all 0.5s ease-in;
+  }
 
   .navbar-brand {
     font-size: 36px;
@@ -60,7 +63,6 @@ body {
   }
 
   .hero {
-    margin-top: -80px;
     background: url(../img/hero-bg.jpg) 65% center no-repeat;
     //min-height: 750px;
     height: 100vh;
@@ -523,6 +525,168 @@ body {
         background: linear-gradient(to right, rgba(209, 0, 59, 1) 0%, rgba(230, 1, 12, 1) 49%, rgba(230, 1, 12, 1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1003b', endColorstr='#e6010c', GradientType=1);
         color: #ffffff;
+      }
+    }
+  }
+
+  .reviews {
+    background: url("../img/reviews-bg.jpg") center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    padding-top: 80px;
+
+    .reviews__subtitle {
+      font-size: 18px;
+      color: $blue;
+      letter-spacing: .05em;
+      font-weight: 400;
+      margin: 0 0 20px;
+    }
+
+    .reviews__title {
+      font-size: 30px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: #ffffff;
+      position: relative;
+      margin-bottom: 80px;
+
+      &:after {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 80px;
+        height: 2px;
+        background: #e50118;
+        margin: 30px 0;
+        left: calc(50% - 40px);
+      }
+    }
+
+    .slick-slider {
+      position: relative;
+      margin-bottom: 145px;
+
+      .slick-dots {
+        position: absolute;
+        list-style: none;
+        padding: 40px 0 0;
+        left: calc(50% - 37.5px);
+
+        li {
+          display: inline-block;
+          margin: 0 5px;
+
+          &:hover {
+
+            button {
+              background: $blue;
+            }
+          }
+
+          button {
+            width: 15px;
+            height: 15px;
+            font-size: 0;
+            border-radius: 50%;
+            border: none;
+
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+
+        li.slick-active {
+
+          button {
+            background: $blue;
+          }
+        }
+
+
+      }
+
+      .slick-slide {
+        background: #222222;
+        height: 300px;
+        margin: 0 20px;
+        color: #ffffff;
+        display: flex;
+        flex-flow: row nowrap;
+
+        img {
+          margin-right: 20px;
+        }
+
+        .text-block {
+          display: flex;
+          flex-flow: column nowrap;
+          justify-content: center;
+
+          @media (min-width: 992px) and (max-width: 1199.98px) {
+            padding-right: 8px;
+          }
+        }
+
+        .name {
+          font-size: 18px;
+          font-weight: 500;
+          color: $blue;
+          margin: 10px 0 15px;
+
+          @media (min-width: 992px) and (max-width: 1199.98px) {
+            margin: 0 0 10px;
+            font-size: 13px;
+          }
+        }
+
+        .job {
+          font-size: 10px;
+          margin: 0 0 40px;
+
+          @media (min-width: 992px) and (max-width: 1199.98px) {
+            margin: 0 0 20px;
+          }
+        }
+
+        .text {
+          font-size: 12px;
+          line-height: 24px;
+          margin: 0 0 30px;
+
+          @media (min-width: 992px) and (max-width: 1199.98px) {
+            margin: 0 0 15px;
+            line-height: 16px;
+            font-size: 10px;
+          }
+        }
+      }
+
+      .reviews__slide1 {
+        .stars {
+          background: url("../img/Stars01.png") center center no-repeat;
+          height: 15px;
+          width: 94px;
+          margin-bottom: 10px;
+        }
+      }
+      .reviews__slide2 {
+        .stars {
+          background: url("../img/Stars02.png") center center no-repeat;
+          height: 15px;
+          width: 94px;
+          margin-bottom: 10px;
+        }
+      }
+      .reviews__slide3 {
+        .stars {
+          background: url("../img/Stars01.png") center center no-repeat;
+          height: 15px;
+          width: 94px;
+          margin-bottom: 10px;
+        }
       }
     }
   }
