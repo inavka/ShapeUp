@@ -46,7 +46,7 @@ $(document).ready(function () {
         dots: false,
         centerMode: false,
         focusOnSelect: true,
-        infinite: true
+        infinite: false
     });
 
 
@@ -56,6 +56,8 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         dots: true,
+        autoplay: true,
+        autoplaySpeed: 4000,
         arrows: false,
         responsive: [
             {

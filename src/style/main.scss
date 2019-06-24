@@ -2,12 +2,6 @@ $red: #f80759;
 $blue: #12c2e9;
 $black: #161616;
 
-a, button, input[type="button"], input[type="submit"] {
-  transition: border-color .1s ease-in,
-  color .1s ease-in,
-  background-color .1s ease-in;
-}
-
 body {
 
   background-color: $black !important;
@@ -1061,6 +1055,215 @@ body {
 
         p {
           margin: 0;
+        }
+      }
+    }
+  }
+
+  .contact {
+    background: url("../img/bg-contact.jpg") center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    color: #ffffff;
+    padding: 5.3rem 0;
+
+    .text-block {
+      display: flex;
+      flex-flow: column nowrap;
+    }
+
+    .contact__subtitle {
+      font-size: 18px;
+      color: $blue;
+      letter-spacing: .05em;
+      font-weight: 400;
+      margin: 0 0 0.6rem;
+    }
+
+    .contact__title {
+      font-size: 48px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      color: #ffffff;
+      margin-bottom: 4.4rem;
+    }
+
+    .contact__text {
+      font-size: 18px;
+      line-height: 30px;
+      margin-bottom: 4.75rem;
+    }
+
+    .contact__button {
+      height: 50px;
+      width: 200px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: center;
+      align-items: center;
+      font-size: 16px;
+      color: #ffffff;
+      align-self: center;
+      border-radius: 5px;
+      background: rgba(209, 0, 59, 1);
+      background: -moz-linear-gradient(left, rgba(209, 0, 59, 1) 0%, rgba(230, 1, 12, 1) 49%, rgba(230, 1, 12, 1) 100%);
+      background: -webkit-linear-gradient(left, rgba(209, 0, 59, 1) 0%, rgba(230, 1, 12, 1) 49%, rgba(230, 1, 12, 1) 100%);
+      background: -o-linear-gradient(left, rgba(209, 0, 59, 1) 0%, rgba(230, 1, 12, 1) 49%, rgba(230, 1, 12, 1) 100%);
+      background: -ms-linear-gradient(left, rgba(209, 0, 59, 1) 0%, rgba(230, 1, 12, 1) 49%, rgba(230, 1, 12, 1) 100%);
+      background: linear-gradient(to right, rgba(209, 0, 59, 1) 0%, rgba(230, 1, 12, 1) 49%, rgba(230, 1, 12, 1) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1003b', endColorstr='#e6010c', GradientType=1);
+      border: none;
+
+      &:hover {
+        text-decoration: none;
+        border: 2px solid $blue;
+      }
+    }
+  }
+
+  .footer {
+    padding: 5rem 0 0 0;
+    color: #ffffff;
+    background: url("../img/bg.jpg") center center no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+
+    .card {
+      background: transparent;
+      border-radius: 0;
+      border: none;
+    }
+
+    .card-body {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 36px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 1.5rem;
+
+      @media (max-width: 767.98px) {
+        font-size: 30px;
+      }
+
+      &:hover {
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      span {
+        color: $red;
+      }
+    }
+
+    .footer__text {
+      font-size: 16px;
+      line-height: 30px;
+      color: #bdc3c7;
+      margin-bottom: 1.6rem;
+    }
+
+    .social-icons__title {
+      font-size: 20px;
+      color: #bdc3c7;
+      margin-bottom: 1rem;
+    }
+
+    .social-icons {
+
+      a {
+        color: #bdc3c7;
+        display: inline-flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border: 1px solid #555555;
+        margin-right: 0.7rem;
+        transition: all 0.3s ease-in;
+
+        &:hover {
+          text-decoration: none;
+          border: 1px solid $red;
+        }
+      }
+    }
+
+    .quick-contacts__title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 0.5rem;
+    }
+
+    .contacts__block {
+
+      div {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        transition: all 0.4s ease-in;
+
+        &:hover {
+
+          a {
+            text-decoration: none;
+            color: $blue;
+          }
+        }
+      }
+
+      a {
+        font-size: 14px;
+        line-height: 24px;
+        color: #bdc3c7;
+      }
+    }
+
+    .fas {
+      color: $blue;
+      margin-right: 1rem;
+    }
+
+    .tags__title {
+      font-size: 24px;
+      font-weight: 700;
+      margin-top: 0.5rem;
+    }
+
+    .tags__block {
+      display: flex;
+      flex-flow: row wrap;
+
+      a {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: auto;
+        padding: 0 1rem;
+        font-size: 15px;
+        border: 1px solid #555555;
+        color: #ffffff;
+        margin: 0 0.5rem 0.5rem 0;
+
+        &:hover {
+          text-decoration: none;
+          background: rgba(209, 0, 59, 1);
+          background: -moz-linear-gradient(left, rgba(209, 0, 59, 1) 0%, rgba(230, 1, 12, 1) 49%, rgba(230, 1, 12, 1) 100%);
+          background: -webkit-linear-gradient(left, rgba(209, 0, 59, 1) 0%, rgba(230, 1, 12, 1) 49%, rgba(230, 1, 12, 1) 100%);
+          background: -o-linear-gradient(left, rgba(209, 0, 59, 1) 0%, rgba(230, 1, 12, 1) 49%, rgba(230, 1, 12, 1) 100%);
+          background: -ms-linear-gradient(left, rgba(209, 0, 59, 1) 0%, rgba(230, 1, 12, 1) 49%, rgba(230, 1, 12, 1) 100%);
+          background: linear-gradient(to right, rgba(209, 0, 59, 1) 0%, rgba(230, 1, 12, 1) 49%, rgba(230, 1, 12, 1) 100%);
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d1003b', endColorstr='#e6010c', GradientType=1);
+          border: 1px solid rgba(209, 0, 59, 1);
         }
       }
     }
